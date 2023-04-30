@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Puxando CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Portfólio</title>
@@ -13,11 +15,17 @@
     <!-- Barra de Navegação -->
     <nav class="navbar">
         <div class="nav-brand">
-            <h1>THY DEV</h1>
+            <h1 class="logo">THY DEV</h1>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
         </div>
 
         <div class="navbar-lista">
-            <ul>
+            <ul class="navbar-lista-responsiva">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#projetos">Projetos</a></li>
@@ -33,7 +41,6 @@
 
                 <h2>Meu Portfólio</h2>
                 <p>Thiago Diogo - Desenvolvedor</p>
-
 
             </div>
         </div>
@@ -72,6 +79,65 @@
             </div>
         </div>
     </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="rodape-conteudo">
+            <div class="rodape-contatos">
+                    <h1>THY DEV</h1>
+                    <p>
+                        Mantenha simples
+                    </p>
+
+                    <div class="rodape-redes-sociais">
+                        <a target="_blank" href="https://www.instagram.com/eipastel/" class="rodape-link instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="rodape-link whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+            </div>
+
+            <ul class="rodape-lista">
+                <li>
+                    <h3>Em breve</h3>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Irei</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Implementar</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Aqui</a>
+                </li>
+            </ul>
+
+            <ul class="rodape-lista">
+                <li>
+                    <h3>Em breve</h3>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Irei</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Implementar</a>
+                </li>
+                <li>
+                    <a class="rodape-link" href="#">Aqui</a>
+                </li>
+            </ul>
+
+            
+            </div>
+        </div>
+
+        <div class="rodape-copy-right">
+            &#169;
+            2023 todos os direitos reservados. 
+        </div>
+    </footer>
 
     <!-- Puxando Javascript -->
     <script src="index.js"></script>
