@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Puxando CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>THY DEV</h1>
+        </div>
+
+        <div class="navbar-lista">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><button>Contato</button></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Banner -->
+    <div  id="inicio" class="area-do-banner">
+        <div class="area-do-conteudo">
+            <div class="conteudo">
+
+                <h2>Meu Portfólio</h2>
+                <p>Thiago Diogo - Desenvolvedor</p>
+                <button class="botao"><a href="#projetos">Projetos</a></button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre Mim -->
+    <div id="sobre" class="container-sobre">
+        <h2>Sobre Mim</h2>
+        <h3>Thiago Diogo</h3>
+        <h4>Desenvolvedor Front-End</h4>
+        <div class="imagem-thiago">
+            <img src="./imagens/imagem-thiago.jpg" alt="Foto de mim">
+        </div>
+        <p>
+            Olá, eu sou o Thiago Diogo, tenho 20 anos e atualmente estou cursando Análise e Desenvolvimento de Sistemas, tenho muitos cursos incluindo cursos de HTML, CSS, Javascript, React, entre outros.
+        </p>
+    </div>
+
+    <!-- Projetos -->
+    <div id="projetos" class="container">
+        <h2 class="sub-titulo">Projetos Finalizados</h2>
+        <div class="projetos">
+            <div>
+                <img class="jogo-das-teclas" src="imagens/jogo-das-teclas.png" alt="Programa Jogo das Letras">
+                <span>
+                    <h3>Jogo das Letras</h3>
+                    <p>Uma brincadeira para treinar seu reflexo.</p>
+                </span>
+            </div>
+            <div>
+                <img class="nao-finalizado" src="imagens/work-in-progress.png" alt="Foto de trabalho em progresso">
+                <span>
+                    <h3>Trabalho em Progresso</h3>
+                    <p>Mais projetos virão em breve!</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Puxando Javascript -->
+    <script src="index.js"></script>
+
+</body>
+</html>
