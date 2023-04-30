@@ -14,25 +14,37 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
     text-transform: uppercase;
+    overflow-x: hidden;
     background-color: #020708;
-    overflow-x: hidden
 }
 
+
 /* Barra de navegação */
+.navbar{
+    background: none;
+    z-index: 1;
+    width: 90%;
+    padding: 0px 100px;
+    margin: 0 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-53%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav div h1 {
     color: rgb(226, 219, 219);
     font-size: 1.6rem;
     letter-spacing: 2px;
 }
 
-.navbar{
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1;
-    height: 8vh;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
+.navbar-lista {
+
 }
 
 .navbar-lista ul {
@@ -43,7 +55,7 @@ nav div h1 {
 }
 
 .navbar-lista ul li {
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .navbar-lista ul li a {
@@ -80,7 +92,7 @@ nav div h1 {
     top: -100px;
     border-radius: 30px;
     width: 75%;
-    padding: 0;
+    padding: 12px 100px;
     animation: fadedown .4s ease 1s forwards;
     backdrop-filter: blur(2.5px);
 }
@@ -121,26 +133,6 @@ nav div h1 {
 .conteudo p {
     font-size: 30px;
     color: #ddd;
-}
-
-.conteudo .botao {
-    border: none;
-    outline: none;
-    margin-top: 100px;
-    font-size: 18px;
-    background: linear-gradient(112.82deg, #a044ff 19.93%, #803a96 102.22%);
-    padding: 10px 26px;
-    font-weight: bold;
-    color: rgb(226, 219, 219);
-    border-radius: 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.botao a {
-    text-decoration: none;
-    color: rgb(226, 219, 219);
 }
 
 /* Sobre Mim */
@@ -368,27 +360,28 @@ footer {
 .menu-mobile div {
     width: 32px;
     height: 2px;
-    background: #000;
+    background: rgb(226, 219, 219);
     margin: 8px;
     transition: .3s;
 }
 
-/* Estilos para telas menores que 768px */
-@media screen and (max-width: 768px) {
+/* Estilos para telas menores que 930px */
+@media screen and (max-width: 930px) {
     body {
         overflow-x: hidden;
     }
     .navbar-lista-responsiva {
         position: absolute;
         top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 80vh;
-        background: #7f37c9;
+        right: -40px;
+        width: 100vw;
+        height: 90vh;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateX(200%);
         transition: transform .3s ease-in;
     }
 
@@ -397,8 +390,16 @@ footer {
         opacity: 0;
     }
 
+    .container-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35vh;
+    }
+
     .menu-mobile {
         display: block;
+        color: rgb(226, 219, 219);
     }
 
     .navbar-lista-responsiva.active {
@@ -428,16 +429,14 @@ footer {
         transform: rotate(45deg) translate(-5px, -7px);
     }
 
-
-
-
-
-
-
     .rodape-conteudo {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+}
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
 }
 
 /* Estilos para telas menores que 426px */
