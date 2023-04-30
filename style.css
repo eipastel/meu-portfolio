@@ -95,7 +95,6 @@ nav div h1 {
     width: 90%;
     animation: fadedown .4s ease 1s forwards;
     backdrop-filter: blur(3px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadedown{
