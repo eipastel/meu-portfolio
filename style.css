@@ -10,9 +10,14 @@
     font-family: 'poppins';
 }
 
-body, html {
-    background-color: #020708;
+body {
     text-transform: uppercase;
+    background-color: #01080A;
+    background-image: url(./imagens/foto-fundo.jpg);
+    height: 1200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(65%);
 }
 
 /* Config itens barra navegação */
@@ -23,7 +28,8 @@ body, html {
 .navbar-itens li a, .menu-dropdown li a {
     text-decoration: none;
     color: rgb(226, 219, 219);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 45 0;
     transition: all .3s;
 }
 
@@ -39,7 +45,7 @@ header {
 
 .navbar {
     width: 100%;
-    height: 80px;
+    height: 8vh;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -97,7 +103,7 @@ header {
     top: 80px;
     height: 0;
     width: 300px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.125);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     overflow: hidden;
@@ -110,11 +116,11 @@ header {
 }
 
 .menu-dropdown.open {
-    height: 210px;
+    height: 225px;
 }
 
 .menu-dropdown li {
-    padding: 0.7rem;
+    padding: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,39 +132,13 @@ header {
     justify-content: center;
 }
 
-/* Responsividade */
-@media(max-width: 800px) {
-    .navbar .navbar-itens,
-    .navbar .botao-de-acao {
-        display: none;
-    }
-
-    .navbar .menu-responsivo {
-        display: block;
-    }
-
-    .menu-dropdown {
-        display: block;
-    }
-}
-
-@media(max-width: 570px) {
-    .menu-dropdown {
-        left: 2rem;
-        width: unset;
-
-    }
-}
-
 /* Foto de Fundo e conteúdo centralizado */
 .area-do-banner {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagens/foto-fundo.jpg);
-    background-size: cover;
 }
 
 .area-do-conteudo {
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,20 +149,24 @@ header {
 }
 
 .conteudo h2 {
-    font-size: 80px;
+    font-size: 5rem;
     color: rgb(226, 219, 219);
 }
 
 .conteudo p {
-    font-size: 30px;
+    font-size: 1.3rem;
     color: #ddd;
 }
 
 /* Sobre Mim */
+.sobre-mim {
+    background-color: rgb(1, 8, 10);
+}
+
 .container-sobre {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 3rem;
+    max-width: 60%;
+    margin: 200px auto;
+    padding: 500 3rem;
     margin-top: 4rem;
     text-align: center;
 }
@@ -191,6 +175,7 @@ header {
     color: rgb(226, 219, 219);
     font-size: 4rem;
     font-weight: bold;
+    padding-top: 3rem;
     margin-bottom: 1rem;
     text-decoration: underline;
 }
@@ -408,8 +393,46 @@ footer {
     transition: .3s;
 }
 
-/* Estilos para telas menores que 768px */
-@media screen and (max-width: 768px) {
+
+/* Responsividade Menu */
+@media(max-width: 800px) {
+    .navbar .navbar-itens,
+    .navbar .botao-de-acao {
+        display: none;
+    }
+
+    .navbar .menu-responsivo {
+        display: block;
+    }
+
+    .menu-dropdown {
+        display: block;
+    }
+}
+
+@media(max-width: 570px) {
+    .menu-dropdown {
+        left: 2rem;
+        width: unset;
+
+    }
+}
+
+/* Estilos para telas menores que 750px */
+@media screen and (max-width: 750px) {
+    .conteudo h2 {
+        font-size: 3.8rem;
+        color: rgb(226, 219, 219);
+    }
+    
+    .conteudo p {
+        font-size: 1rem;
+        color: #ddd;
+    }
+
+    .container-sobre{ 
+        max-width: 500px;
+    }
 }
 
 /* Estilos para telas menores que 426px */
