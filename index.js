@@ -58,15 +58,6 @@ const mobileNavBar = new MobileNavBar(
 
 mobileNavBar.init();
 
-document.addEventListener('scroll', () => {
-    if(window.top.scrollY > 19) {
-        navbar.classList.add('scroll');
-    } else {
-        navbar.classList.remove('scroll');
-        navbar.style.transition = '.4s ease';
-    }
-})
-
 function getDistanceFromTheTop(elemento) {
     const id = elemento.getAttribute("href");
     return document.querySelector(id).offsetTop;
