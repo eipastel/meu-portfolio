@@ -1,6 +1,18 @@
 let navbar = document.querySelector('nav');
 const cabecalho = document.querySelector('navbar')
 const menuLinks =  document.querySelectorAll('body a[href^="#"]')
+const toggleBtn = document.querySelector('.menu-responsivo')
+const toggleIcon = document.querySelector('.menu-responsivo i')
+const dropDownMenu = document.querySelector('.menu-dropdown')
+
+toggleBtn.onclick = function() {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
 
 class MobileNavBar {
     constructor(mobileMenu, navList, navLinks) {
