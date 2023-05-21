@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+/* Formatação Geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.texto-roxo {
+  color: #7127BA;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+.texto-menor {
+  font-size: .5em;
+}
+
+.borda-arredondada {
+  border: 1px outset #FDFFFC;
+  padding: 7px;
+  border-radius: 100%;
+  border-bottom: 0;
+  border-left: 15px;
+}
+
+/* Cabeçalho */
+header {
+  width: 100%;
+  background-color: #1A0B2E;
+  display: flex;
+  height: 8vh;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 30px #11071F;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header a {
+  text-decoration: none;
+}
+
+h1.logo a {
+  color: #FDFFFC;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .85em;
+  transition: all .3s;
+}
+
+h1.logo a:hover {
+  color: #7127BA;
+}
+
+nav ul {
+  display: flex;
+}
+
+ul li {
+  font-size: 1.2em;
+  list-style: none;
+  margin-left: 1.8em;
+}
+
+ul li a {
+  transition: all .3s;
+}
+
+ul li a:hover {
+  color: #7127BA;
+}
+
+.nav-bar a {
+  color: #FDFFFC;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+  height: 92vh;
+  width: 100%;
+  background-color: #11071F;
+  color: #FDFFFC;
+  justify-content: center;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  z-index: 0;
+  padding: 0 100px;
+}
+
+.textos-conteudo-principal p {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 2em;
+}
+
+.conteudo-principal .minha-imagem img {
+  filter: drop-shadow(0px 0px 60px #7127BA);
+}
+
+p.texto-detalhe {
+  font-size: .7em;
+}
+
+.textos-conteudo-principal .me-apresentando {
+  margin-bottom: 3em;
+  font-size: 1em;
+}
+
+.textos-conteudo-principal .texto-maior {
+  font-size: 2.5em;
+}
+
+.textos-conteudo-principal .slogan {
+  line-height: 2.5em;
+}
+
+/* Sobre mim */
+.sobre-mim {
+  width: 100%;
+  height: 1000px;
+  padding: 100px 0;
+  background-color: #11071F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sobre-mim .conteudo-introducao {
+  width: 80%;
+  color: #FDFFFC;
+  text-align: center;
+  line-height: 2.2em;
+}
+
+.sobre-mim .conteudo-sobremim {
+  width: 80%;
+  color: #FDFFFC;
+  text-align: justify;
+  padding: 0 30px;
+  margin-top: 50px;
+  line-height: 1.3em;
+}
+
+.sobre-mim h3, .sobre-mim p{
+  font-family: 'Preahvihear', sans-serif;
+}
+
+.sobre-mim h3 {
+  font-size: 2em;
+}
+
+.sobre-mim p {
+  font-size: .8em;
+}
