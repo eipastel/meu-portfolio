@@ -1,3 +1,4 @@
+/* Imports iniciais */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
@@ -139,7 +140,7 @@ p.texto-detalhe {
 }
 
 .sobre-mim .conteudo-sobremim {
-  width: 80%;
+  width: 50%;
   color: #FDFFFC;
   text-align: justify;
   padding: 0 30px;
@@ -147,14 +148,29 @@ p.texto-detalhe {
   line-height: 1.3em;
 }
 
-.sobre-mim h3, .sobre-mim p{
+.sobre-mim h3 {
   font-family: 'Preahvihear', sans-serif;
 }
 
-.sobre-mim h3 {
-  font-size: 2em;
+.sobre-mim p {
+  font-size: .9em;
 }
 
-.sobre-mim p {
+.sobre-mim h3 {
+  font-size: 2.5em;
+}
+
+.conteudo-sobremim p {
   font-size: .8em;
+  text-align: justify;
+}
+
+@media (max-width: 900px) {
+  .conteudo-principal {
+    flex-direction: column;
+  }
+
+  .textos-conteudo-principal .me-apresentando {
+    margin-bottom: 0;
+  }
 }
