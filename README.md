@@ -1,5 +1,8 @@
 # Em andamento!
 
+# Para acessar pelo link:
+[Meu portfólio](https://eipastel.github.io/meu-portfolio)
+
 > Minha intenção com isso é mostrar meus trabalhos e me apresentar para as pessoas que queiram me conhecer como pessoa e desenvolvedor.
 
 > Obs: O projeto do meu portfólio está sendo criado aos poucos e sem pressa, portanto, qualquer tipo de bug, falta de responsividade é por conta disso, não se preocupe, estou trabalhando nele!
